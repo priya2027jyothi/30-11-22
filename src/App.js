@@ -11,7 +11,7 @@ function Demo(){
   )
 }
 export default Demo*/
-import PropsExample from './PropsExample'
+{/*import PropsExample from './PropsExample'
 function Demo(){
   return(
     <div>
@@ -20,6 +20,36 @@ function Demo(){
     </div>
     )
 }
-export default Demo
+export default Demo*/}
+
+
+//import PropExample from './PropExample'
+{/*import PropExample from './PropExample' 
+import FuncPropExample from './FuncPropExample'
+function App(){
+  return(
+    <div>
+      {/*
+    <PropsExample framework="AngularJS" year="2002"/>
+    <PropsExample framework="ReactJS" year="2004"/>
+    <PropsExample framework="VueJS" year="2005"/>
+  */}
+    //<FuncPropExample framework="React" number="1"/>
+
+    {/*</div>
+  )
+}
+export default App//*/}
+
+import StateExample from  './StateExample'
+
+function App(){
+  return(
+    <div>
+      <StateExample/>
+    </div>
+  )
+}
+export default App
 
                              
