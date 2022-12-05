@@ -1,55 +1,57 @@
-/*import ClassComponent from "./ClassComponent"
-import ClassComponent2 from "./ClassComponent2"
-function Demo(){
-  return(
-    <div>
-      <p>hi good morning</p>
-      <h1>christmas tree</h1>
-      <ClassComponent/>
-      <ClassComponent2/>
-    </div>
-  )
-}
-export default Demo*/
-{/*import PropsExample from './PropsExample'
-function Demo(){
-  return(
-    <div>
-    <h1>This is about props example</h1>
-    <PropsExample name="Sameera" age="18"/>
-    </div>
-    )
-}
-export default Demo*/}
 
-
-//import PropExample from './PropExample'
-{/*import PropExample from './PropExample' 
-import FuncPropExample from './FuncPropExample'
+import {BrowserRouter,Route,Routes} from "react-router-dom"
+import Home from "./component/Home";
+import About from "./component/About";
+import Contact from "./component/Contact";
+import Navbar from "./component/Navbar";
+import NotFound from "./component/NotFound";
 function App(){
   return(
     <div>
-      {/*
-    <PropsExample framework="AngularJS" year="2002"/>
-    <PropsExample framework="ReactJS" year="2004"/>
-    <PropsExample framework="VueJS" year="2005"/>
-  */}
-    //<FuncPropExample framework="React" number="1"/>
-
-    {/*</div>
-  )
-}
-export default App//*/}
-
-import StateExample from  './StateExample'
-
-function App(){
-  return(
-    <div>
-      <StateExample/>
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+      
+     <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="*" element={<NotFound/>}/>
+        
+        </Routes>
+        </BrowserRouter>
     </div>
+
+  )
+
+}
+export default App
+
+//import ClassComponent from './ClassComponent'
+//import PropsExample from './PropsExample'
+//import StateExample from './StateExample'
+//import FuncProps from './FuncProps'
+
+
+//import DemoExample from './DemoExample'
+//import Events from './Events'
+{/*function App(){
+  return(
+    <section>
+    <Events/>
+  {/<DemoExample price="1st price"/>/}*/}
+    {/*<StateExample/>
+      <FuncProps carname="rolls royce" year="1998"/>
+        <h1>hello</h1>*/}
+        {/*<PropsExample name="nani" age="20"/>
+        < PropsExample name="arjun" age="21"/>*/}
+        {/*<p>Good afternoon</p>
+            <h1>This is heading tag</h1>
+          <img src="https://www.shutterstock.com/image-photo/night-sky-stars-moon-260nw-552010999.jp" alt="image"/>
+        <ClassComponent/>
+      </section>
   )
 }
 export default App
+*/}
 
                              
